@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="icon">⏰</div>
+
+        <h1>Alarm Clock</h1>
+        <p class="subtitle">Manage your time beautifully</p>
+
+        <div class="clock-box">
+            <h2 id="clock">00:00:00</h2>
+            <p id="date">Loading date...</p>
+        </div>
+
+        <div class="alarm-box">
+
+            <h3>Set Your Alarm</h3>
+
+            <input type="time" id="alarmTime">
+
+            <div class="buttons">
+                <button class="set-btn" onclick="setAlarm()">
+                    Set Alarm
+                </button>
+
+                <button class="stop-btn" onclick="stopAlarm()">
+                    Stop Alarm
+                </button>
+
+                <button class="reset-btn" onclick="resetAlarm()">
+                    Reset
+                </button>
+            </div>
+
+            <p id="message">No Alarm Set</p>
+
+        </div>
+
+        <p class="footer">Made with ❤️ using JavaScript</p>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
